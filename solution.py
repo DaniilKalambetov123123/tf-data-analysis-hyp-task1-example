@@ -11,5 +11,5 @@ def solution(x_success: int,
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    return (proportions_ztest([x_success, y_success], [x_cnt, y_cnt])[0] <= 0 and
+    return (proportions_ztest([x_success, y_success], [x_cnt, y_cnt])[0] <= 0 or
             proportions_ztest([x_success, y_success], [x_cnt, y_cnt])[1] < 0.93)
